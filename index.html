@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Bar</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="scroll-line"></div>
+    <div class="container">
+      <div class="content">
+         <div class="title">
+            <h2>Twitter Bookmarks</h2>
+         </div> 
+         <div class="row">
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Life is a long game. Play by these Ps:<br><br>💎 Passion for building communities and products.<br>💎 Patience when dealing with results.<br>💎 Perseverance when achieving goals.</p>&mdash; Sharath 📣 (@5harath) <a href="https://twitter.com/5harath/status/1371458955428433924?ref_src=twsrc%5Etfw">March 15, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>            
+            </div> 
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">It only gets better when you show up</p>&mdash; Sharath 📣 (@5harath) <a href="https://twitter.com/5harath/status/1391063023394066434?ref_src=twsrc%5Etfw">May 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>   
+        </div>
+         <div class="row">
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Hard work and its Rewards are two different aspects.<br>Someone can/may steal your rewards, but they can never steal your hard work.<br><br>Don&#39;t combine the two.<br>They are highly interlinked but at the same time different.</p>&mdash; Bharat (@Bharat_Rochlani) <a href="https://twitter.com/Bharat_Rochlani/status/1259796440961908738?ref_src=twsrc%5Etfw">May 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div> 
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">People follow people. <br><br>People don&#39;t follow products. <br><br>That&#39;s why you need to build a community.</p>&mdash; Sharath 📣 (@5harath) <a href="https://twitter.com/5harath/status/1398340978197417984?ref_src=twsrc%5Etfw">May 28, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>   
+         </div>
+         <div class="row">
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Start a side project instead of a company. <br><br>Write a blog post instead of a book.<br><br>Lower the stakes to increase the odds.</p>&mdash; Sahil (@shl) <a href="https://twitter.com/shl/status/1397921579758092305?ref_src=twsrc%5Etfw">May 27, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>           
+            </div> 
+            <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Sahil Lavingia on <a href="https://twitter.com/TheRanveerShow?ref_src=twsrc%5Etfw">@TheRanveerShow</a> :<br><br>Below is a thread on the entire podcast episode:<a href="https://t.co/xkgQMP50zh">https://t.co/xkgQMP50zh</a></p>&mdash; Nikhil (@Tech_Nikkhil) <a href="https://twitter.com/Tech_Nikkhil/status/1397519380502568966?ref_src=twsrc%5Etfw">May 26, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>   
+         </div>
+         <div class="row">
+             <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">What you do on the day to day basis is the real thing,<br><br>What you achieve through those actions is just a bonus.<br><br>Optimize for the day to day actions, not for the achievements.<br><br>Most people are doing the opposite.</p>&mdash; Kunal (@KunalBSarkar) <a href="https://twitter.com/KunalBSarkar/status/1317842878794592259?ref_src=twsrc%5Etfw">October 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             </div>
+             <div class="col-md-6">
+                <blockquote class="twitter-tweet" data-lang="en" data-theme="dark"><p lang="en" dir="ltr">Absolute life changing books / videos. <a href="https://t.co/rY8Ltz4bs1">pic.twitter.com/rY8Ltz4bs1</a></p>&mdash; Gaurav Munjal (@gauravmunjal) <a href="https://twitter.com/gauravmunjal/status/1287390113463320576?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             </div>
+         </div>
+
+        
+      </div>
+    </div>
+    <footer class="text-center bg-dark">
+        Made with 💖 by <a href="https://twitter.com/Tech_Nikkhil">Nikhil</a>
+        </footer>
+
+    <script>
+        //grab element
+        const scrollLine = document.querySelector('.scroll-line')
+
+        //create function
+         function fillScrollLine(){
+            const windowHeight = window.innerHeight
+
+            const fullHeight = document.body.clientHeight
+
+            const scrolled = window.scrollY
+
+            const percentScrolled = (scrolled / (fullHeight - windowHeight))* 100
+
+            scrollLine.style.width = `${percentScrolled}%`
+        }
+
+        //add event listener
+        window.addEventListener('scroll',fillScrollLine)
+    </script>
+</body>
+</html>

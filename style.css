@@ -1,0 +1,34 @@
+body {
+	background-color: #efefef;
+	padding: 20px;
+}
+.content {
+	/* min-height: 3000px; */
+	background: #fff;
+	padding: 30px;
+	font-size: 19px;
+	line-height: 1.5;
+}
+.scroll-line {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 1%;
+	background-color: #1ce;
+	transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+}
+a {
+	text-decoration: underline;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	/* color: black; */
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+}
